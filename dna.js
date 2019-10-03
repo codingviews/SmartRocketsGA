@@ -10,7 +10,7 @@ class DNA {
       this.maxforce = 0.1;
       for (let i = 0; i < lifetime; i++) {
         let angle = random(TWO_PI);
-        this.genes[1] = p5.Vector.fromAngle(angle);
+        this.genes[i] = p5.Vector.fromAngle(angle);
         this.genes[i].mult(random(0, this.maxforce));
       }
     }

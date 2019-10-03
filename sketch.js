@@ -59,7 +59,7 @@ function draw() {
     // Otherwise a new generation
   } else {
     lifeCounter = 0;
-    population.fitness();
+    population.calcFitness();
     population.selection();
     population.reproduction();
   }
